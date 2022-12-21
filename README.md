@@ -1,8 +1,6 @@
 # n8n-nodes-osticket
 
-This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
-
-_App/service name_ is _one or two sentences describing the service this node integrates with_.
+This is an n8n community node. It lets you use OSTicket in your n8n workflows. At the moment this node is limited to only being able to create new tickets. When OSTicket 2.0 is released the API should support more options.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
@@ -10,7 +8,6 @@ _App/service name_ is _one or two sentences describing the service this node int
 [Operations](#operations)  
 [Credentials](#credentials)  <!-- delete if no auth needed -->  
 [Compatibility](#compatibility)  
-[Usage](#usage)  <!-- delete if not using this section -->  
 [Resources](#resources)  
 [Version history](#version-history)  <!-- delete if not using this section -->  
 
@@ -20,29 +17,28 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-_List the operations supported by your node._
+### Ticket
+ - Create
 
 ## Credentials
 
-_If users need to authenticate with the app/service, provide details here. You should include prerequisites (such as signing up with the service), available authentication methods, and how to set them up._
+### Domain
+The domain is the hostname / ip / FQDN of your OSTicket server including protocol and port, As an example if you use `http://osticket.myhost.com` to access your osticket server this would be the value you enter here.
+
+### Token
+The token can be found in the osticket admin panel under Manage > API
+
+### Self Signed Certificate
+If you are using a self signed certificate or if you don't know enable this option.
 
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
-
-## Usage
-
-_This is an optional section. Use it to help users with any difficult or confusing aspects of the node._
-
-_By the time users are looking for community nodes, they probably already know n8n basics. But if you expect new users, you can link to the [Try it out](https://docs.n8n.io/try-it-out/) documentation to help them get started._
+This node has been tested with n8n 0.208.1 and osticket 1.17.2
 
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-* _Link to app/service documentation._
 
 ## Version history
 
-_This is another optional section. If your node has multiple versions, include a short description of available versions and what changed, as well as any compatibility impact._
-
-
+0.1.0 - Initial Release

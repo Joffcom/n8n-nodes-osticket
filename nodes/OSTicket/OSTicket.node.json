@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-base.osticket",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.osticket.com/en/latest/Developer%20Documentation/API%20Docs.html#authentication"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://www.npmjs.com/package/n8n-nodes-osticket"
+			}
+		]
+	}
+}
