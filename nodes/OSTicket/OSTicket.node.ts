@@ -1,7 +1,7 @@
 import { INodeType, INodeTypeDescription } from 'n8n-workflow';
 import { ticketFields, ticketOperations } from './descriptions';
 
-export class OSTicket implements INodeType {
+export class OsTicket implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'OSTicket',
 		name: 'osTicket',
