@@ -34,7 +34,7 @@
       "dist/credentials/OSTicketApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/OSTicket/OSTicket.node.js"
+      "dist/nodes/OSTicket/OsTicket.node.js"
     ]
   },
   "devDependencies": {
